@@ -45,7 +45,7 @@ def update(frame):
     return [status_A, status_B]
 
 anim = animation.FuncAnimation(fig, update, frames=100, interval=33)
-output_filename = 'MovieS5_Perturbation_Laminar_Transition.mp4'
+output_filename = 'Movie5_Perturbation_Laminar_Transition.mp4'
 anim.save(output_filename, writer='ffmpeg', fps=30, dpi=150)
 plt.close(fig)
 print(f"Successfully rendered '{output_filename}'.")
