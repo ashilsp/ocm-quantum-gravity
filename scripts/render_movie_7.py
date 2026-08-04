@@ -69,7 +69,7 @@ def update(frame):
     return line_ocm_acc, burst_point
 
 anim = animation.FuncAnimation(fig, update, frames=100, interval=50)
-output_filename = 'MovieS7_PBH_Micro_Quantum_Dynamics.mp4'
+output_filename = 'Movie7_PBH_Micro_Quantum_Dynamics.mp4'
 anim.save(output_filename, writer='ffmpeg', fps=30, dpi=150)
 plt.close(fig)
 print(f"Successfully rendered '{output_filename}'.")
