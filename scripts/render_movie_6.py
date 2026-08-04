@@ -83,7 +83,7 @@ def update(frame):
     return [line_strain, status_A, status_B] + lines_zeeman
 
 anim = animation.FuncAnimation(fig, update, frames=100, interval=50)
-output_filename = 'MovieS6_GW_Echoes_Zeeman_Splitting.mp4'
+output_filename = 'Movie6_GW_Echoes_Zeeman_Splitting.mp4'
 anim.save(output_filename, writer='ffmpeg', fps=30, dpi=150)
 plt.close(fig)
 print(f"Successfully rendered '{output_filename}'.")
