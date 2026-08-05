@@ -73,7 +73,7 @@ def update(frame):
     return sec_curve, psi_curve, ocm_integrand_curve, status_A, status_B
 
 anim = animation.FuncAnimation(fig, update, frames=100, interval=50)
-output_filename = 'MovieS22_Kappa_Hamiltonian.mp4'
+output_filename = 'MovieS1_Kappa_Hamiltonian.mp4'
 anim.save(output_filename, writer='ffmpeg', fps=30, dpi=150)
 plt.close(fig)
 print(f"Successfully rendered '{output_filename}'.")
